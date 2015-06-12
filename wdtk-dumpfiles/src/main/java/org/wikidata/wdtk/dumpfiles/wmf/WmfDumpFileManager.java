@@ -265,8 +265,6 @@ public class WmfDumpFileManager {
 			String dateStamp = WmfDumpFile
 					.getDateStampFromDumpFileDirectoryName(dumpContentType,
 							directory);
-			System.out.println(dateStamp);
-			System.out.println(directory);
 			if (dateStamp.matches(WmfDumpFileManager.DATE_STAMP_PATTERN)) {
 				WmfLocalDumpFile dumpFile = new WmfLocalDumpFile(dateStamp,
 						this.projectName, dumpfileDirectoryManager,

@@ -116,7 +116,7 @@ public class ExampleHelpers {
 
 		
 		// Controller object for processing dumps:
-		DumpProcessingController dumpProcessingController = new DumpProcessingController("wikidatawiki", "D:\\WikiData");
+		DumpProcessingController dumpProcessingController = new DumpProcessingController("wikidatawiki");
 		dumpProcessingController.setOfflineMode(OFFLINE_MODE);
 		
 		//If proxy needed

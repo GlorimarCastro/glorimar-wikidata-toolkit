@@ -154,13 +154,13 @@ public class JsonSerializationInstanceOfProcessor implements EntityDocumentProce
 				continue;
 			}
 			for (Statement s : sg.getStatements()) {
-				System.out.println(s.getClaim().toString());
 				if (s.getClaim().getMainSnak() instanceof ValueSnak) {
 					Value v = ((ValueSnak) s.getClaim().getMainSnak())
 							.getValue();
 					if (v instanceof ItemIdValue
 							&& Entity.HUMAN.toString().equals(((ItemIdValue) v).getId())) {
 						System.out.println(v.toString());
+						System.out.println(s.getClaim().toString());
 						return true;
 					}
 				}

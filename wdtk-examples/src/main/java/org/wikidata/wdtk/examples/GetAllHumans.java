@@ -40,7 +40,7 @@ public class GetAllHumans {
 	//***************************************************************
 	//							MAIN METHOD
 	//***************************************************************
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] input) throws IOException{
 		
 		//Set Logger configuration.
 		ExampleHelpers.configureLogging();

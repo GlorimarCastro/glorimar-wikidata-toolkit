@@ -102,6 +102,7 @@ public class DirectoryManagerImpl implements DirectoryManager {
 	@Override
 	public boolean hasFile(String fileName) {
 		Path filePath = this.directory.resolve(fileName);
+		System.out.println(filePath + "   " + Files.isRegularFile(filePath));
 		return Files.isRegularFile(filePath);
 	}
 
